@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.rotate {
+  animation: spin 130s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
