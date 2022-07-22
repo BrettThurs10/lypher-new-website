@@ -12,7 +12,6 @@ import {
 import React, { useEffect } from "react";
 import AppleIcon from "@mui/icons-material/Apple";
 import Screenies from "./components/Screenies";
-import { grey } from "@mui/material/colors";
 import screen from "./img/screenshots/main.png";
 import editPlayer from "./img/screenshots/editPlayer.png";
 import resources from "./img/screenshots/resources.png";
@@ -25,19 +24,34 @@ import { Helmet } from "react-helmet";
 import Feature from "./components/Feature";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import CaseStudies from "./components/CaseStudies";
+import PrivacyPolicyModal from "./components/PrivacyPolicyModal";
+import MailDialog from "./components/MailDialog";
+import { Icon } from "@iconify/react";
 
 function App() {
   useEffect(() => {
     AOS.init({ startEvent: "load", once: true });
     AOS.refresh();
   }, []);
-
+  const [open, setOpen] = React.useState(false);
+  const [mailOpen, setMailOpen] = React.useState(false);
+  const handleMailClose = () => {
+    setMailOpen(!mailOpen);
+  };
+  const handleClose = () => {
+    setOpen(!open);
+  };
+  React.useEffect(() => {
+    if (window.location.href.indexOf("privacy-policy") !== -1) {
+      setOpen(true);
+    }
+  }, []);
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Lypher: Universal Game Companion | Download today</title>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Helmet>
       <Paper
         style={{
@@ -82,26 +96,38 @@ function App() {
                 alignItems: "flex-start",
               }}
             >
-              <Typography variant="h3" sx={{ textAlign: "left" }}>
-                Get this app
+              <Typography gutterBottom variant="h4" sx={{ textAlign: "left" }}>
+                Meet your new game buddy
               </Typography>
               <Typography variant="body1" sx={{ textAlign: "left" }}>
-                Voluptas quo quibusdam corrupti aut rerum perspiciatis. Et nihil
-                nulla libero modi ut et. Vero eveniet sequi delectus eius
-                similique. Et magni a cumque assumenda iste.
+                Lypher is a companion app to board games or tabletop sessions.
+                Get into the game faster with this handy dandy tool. Track
+                resources/score, arrange player list, color coordinate players,
+                roll dice and archive game sessions.
               </Typography>
 
-              <Typography
-                variant="body1"
-                sx={{ textAlign: "left", marginTop: 2 }}
-              >
-                Rem recusandae quisquam quam voluptatum iste sit est.
-              </Typography>
-              <Box sx={{ marginTop: 5 }}>
-                <Button variant="contained" startIcon={<AppleIcon />}>
+              <Stack sx={{ marginTop: 5, flexDirection: "row" }}>
+                <Button
+                  color="secondary"
+                  sx={{ mr: 2 }}
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://apps.apple.com/us/app/lypher/id1526420861"
+                  variant="contained"
+                  startIcon={<AppleIcon />}
+                >
                   Download
                 </Button>
-              </Box>
+                <Button
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://discord.gg/Dydu9FHU"
+                  variant="contained"
+                  startIcon={<Icon icon="simple-icons:discord" />}
+                >
+                  Join the Discord
+                </Button>
+              </Stack>
             </Stack>
           </Stack>
         </Container>
@@ -194,7 +220,39 @@ function App() {
               alt="More features to comes."
             />
           </Stack>
+          <CaseStudies />
+          <Stack
+            sx={{
+              flexDirection: { xs: "column-reverse", sm: "row" },
+              justifyContent: "space-between",
+              paddingBottom: 10,
+
+              alignItems: { xs: "center", sm: "flex-start" },
+            }}
+          >
+            <Typography variant="body2">
+              Made in a super secret lair at Super Moon Base.
+            </Typography>
+            <Stack flexDirection="row">
+              <Button
+                color="secondary"
+                onClick={() => setOpen(!open)}
+                variant="text"
+              >
+                Privacy policy
+              </Button>
+              <Button
+                color="secondary"
+                onClick={() => setMailOpen(!mailOpen)}
+                variant="text"
+              >
+                Contact{" "}
+              </Button>
+            </Stack>
+          </Stack>
         </Container>
+        <PrivacyPolicyModal open={open} handleClose={handleClose} />
+        <MailDialog open={mailOpen} handleClose={handleMailClose} />
       </Paper>
     </>
   );

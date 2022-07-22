@@ -13,6 +13,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
+import AppleIcon from "@mui/icons-material/Apple";
 
 interface Props {
   /**
@@ -63,10 +64,10 @@ export default function DrawerAppBar(props: Props) {
           <Toolbar
             sx={{
               display: "flex",
-              flexDirection: { xs: "row-reverse", sm: "row" },
+              flexDirection: "row",
             }}
           >
-            <IconButton
+            {/* <IconButton
               color="inherit"
               aria-label="open drawer"
               edge="start"
@@ -74,7 +75,7 @@ export default function DrawerAppBar(props: Props) {
               sx={{ mr: 2, display: { sm: "none" } }}
             >
               <MenuIcon />
-            </IconButton>
+            </IconButton> */}
             <Typography
               variant="h6"
               component="div"
@@ -82,19 +83,25 @@ export default function DrawerAppBar(props: Props) {
             >
               LYPHER
             </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Button>
-              ))}
+            <Box>
+              <Button
+                color="secondary"
+                size="small"
+                rel="noreferrer"
+                target="_blank"
+                href="https://apps.apple.com/us/app/lypher/id1526420861"
+                variant="contained"
+                startIcon={<AppleIcon />}
+              >
+                Download
+              </Button>
             </Box>
           </Toolbar>
         </Container>
       </AppBar>
       {/* mobile menu */}
       <Box component="nav">
-        <Drawer
+        {/* <Drawer
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -111,7 +118,7 @@ export default function DrawerAppBar(props: Props) {
           }}
         >
           {drawer}
-        </Drawer>
+        </Drawer> */}
       </Box>
     </Box>
   );

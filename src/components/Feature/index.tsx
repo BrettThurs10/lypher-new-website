@@ -1,37 +1,18 @@
-import React, { useState, useEffect } from "react";
-import {
-  Container,
-  Paper,
-  Typography,
-  Toolbar,
-  Box,
-  Stack,
-  Button,
-} from "@mui/material";
+import { Paper, Typography, Box } from "@mui/material";
 import { grey } from "@mui/material/colors";
-import { zoomIn } from "react-animations";
-import styled, { keyframes } from "styled-components";
-import VisibilitySensor from "react-visibility-sensor";
-import { ZoomIn } from "@mui/icons-material";
 
 interface IFeature {
   src?: any;
   text: string;
   alt: string;
-  textOnly?: boolean;
   l?: boolean;
   r?: boolean;
 }
 
-const DropInAnimation = keyframes`${zoomIn}`;
-
-const DropInDiv = styled.div`
-  animation: 2s ${DropInAnimation};
-`;
-
 const Feature = ({ src, text, alt, l, r }: IFeature) => {
   return (
     <Paper
+      elevation={16}
       data-aos={r ? "fade-left" : "fade-right"}
       data-aos-offset="500"
       sx={{

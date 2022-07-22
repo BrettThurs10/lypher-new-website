@@ -1,17 +1,10 @@
-import { Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import screen from "../../img/screenshots/main.png";
 import space from "../../img/space.jpeg";
 import menu from "../../img/screenshots/menu.png";
 import resources from "../../img/screenshots/resources.png";
 import { useWindowSize } from "../../hooks/useWindowSize";
-// import { slideInUp } from "react-animations";
-// import styled, { keyframes } from "styled-components";
 
-// const SlideInUpAnimation = keyframes`${slideInUp}`;
-
-// const SlideInUpDiv = styled.div`
-//   animation: 2s ${SlideInUpAnimation};
-// `;
 type Props = {};
 
 const Screenies = (props: Props) => {
@@ -30,17 +23,16 @@ const Screenies = (props: Props) => {
   };
   return (
     <Box
+      data-aos="fade-right"
       sx={{
         display: "flex",
         height: "100%",
         width: "100%",
         justifyContent: "center",
         alignItems: "center",
-        // marginTop: { xs: 0, sm: -10 },
         padding: 5,
       }}
     >
-      {/* <SlideInUpDiv> */}
       <Box
         sx={{
           display: "flex",
@@ -69,7 +61,7 @@ const Screenies = (props: Props) => {
                 xs: size.width / 1.06,
               },
               width: {
-                lg: size.width / 6.5,
+                lg: size.width / 6,
                 md: size.width / 4.7,
                 sm: size.width / 4.2,
                 xs: size.width / 2.2,
@@ -95,13 +87,13 @@ const Screenies = (props: Props) => {
                   lg: size.width / 8.3,
                   md: size.width / 6,
                   sm: size.width / 6.5,
-                  xs: size.width / 2.7,
+                  xs: size.width / 2.2,
                 },
+                right: { xl: 200, lg: 160, md: 120, sm: 100, xs: 100 },
+                top: { xl: 80, lg: 70, md: 60, sm: 35, xs: 20 },
                 borderRadius: 2,
                 position: "absolute",
                 zIndex: 9,
-                right: { xl: 200, lg: 160, md: 120, sm: 100, xs: 120 },
-                top: { xl: 80, lg: 70, md: 60, sm: 35, xs: 20 },
               }}
             />
             <Box
@@ -118,19 +110,20 @@ const Screenies = (props: Props) => {
                   lg: size.width / 8.3,
                   md: size.width / 6,
                   sm: size.width / 6.5,
-                  xs: size.width / 2.8,
+                  xs: size.width / 2.2,
                 },
+                left: { xl: 200, lg: 160, md: 120, sm: 100, xs: 100 },
+                top: { xl: 80, lg: 70, md: 60, sm: 35, xs: 20 },
                 borderRadius: 2,
                 position: "absolute",
                 zIndex: 9,
-                left: { xl: 200, lg: 160, md: 120, sm: 100, xs: 120 },
-                top: { xl: 80, lg: 70, md: 60, sm: 35, xs: 20 },
               }}
             />
           </Box>
         </Box>
 
-        <Box
+        <Paper
+          elevation={16}
           className="rotate"
           sx={{
             backgroundImage: `url(${space})`,
@@ -141,7 +134,6 @@ const Screenies = (props: Props) => {
           }}
         />
       </Box>
-      {/* </SlideInUpDiv> */}
     </Box>
   );
 };
