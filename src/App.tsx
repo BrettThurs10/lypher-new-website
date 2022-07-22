@@ -52,6 +52,23 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Lypher: Universal Game Companion | Download today</title>
+        <meta
+          name="description"
+          content=" Lypher is a companion app to board games or tabletop sessions.
+                Get into the game faster with this handy dandy tool. Track
+                resources/score, arrange player list, color coordinate players,
+                roll dice and archive game sessions."
+        />
+        <meta property="og:title" content="Lypher: Universal Game Companion" />
+        <meta
+          property="og:description"
+          content="Lypher is a companion app to board games or tabletop sessions.
+                Get into the game faster with this handy dandy tool. Track
+                resources/score, arrange player list, color coordinate players,
+                roll dice and archive game sessions."
+        />
+
+        <meta name="theme-color" content="#008f68" />
       </Helmet>
       <Paper
         style={{
