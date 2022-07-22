@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.19c60013.css",
-    "main.js": "/static/js/main.0b7a0da3.js",
+    "main.js": "/static/js/main.082e9bd2.js",
     "static/js/787.ef3b7cee.chunk.js": "/static/js/787.ef3b7cee.chunk.js",
     "static/media/space.jpeg": "/static/media/space.5dd71511ae6c2e1b9cef.jpeg",
     "static/media/dragon.jpeg": "/static/media/dragon.9e0eba1a3756546266cb.jpeg",
@@ -20,11 +20,11 @@
     "static/media/dela-gothic-one-v10-latin-regular.woff2": "/static/media/dela-gothic-one-v10-latin-regular.f47fab6bfedf14a46b76.woff2",
     "index.html": "/index.html",
     "main.19c60013.css.map": "/static/css/main.19c60013.css.map",
-    "main.0b7a0da3.js.map": "/static/js/main.0b7a0da3.js.map",
+    "main.082e9bd2.js.map": "/static/js/main.082e9bd2.js.map",
     "787.ef3b7cee.chunk.js.map": "/static/js/787.ef3b7cee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19c60013.css",
-    "static/js/main.0b7a0da3.js"
+    "static/js/main.082e9bd2.js"
   ]
 }
