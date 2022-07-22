@@ -5,9 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./styles/theme";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-import AOS from "aos";
-AOS.init({ duration: 800, offset: 200 });
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
