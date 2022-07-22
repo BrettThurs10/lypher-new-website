@@ -13,3 +13,6 @@ declare module "@mui/material/styles" {
     };
   }
 }
+declare module "aos";
+
+declare module "react-helmet";

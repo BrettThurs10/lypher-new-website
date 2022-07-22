@@ -35,9 +35,10 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+      <Typography className="logo" variant="h6" sx={{ my: 2 }}>
+        LYPHER
       </Typography>
+
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -59,7 +60,12 @@ export default function DrawerAppBar(props: Props) {
       {/* desktop menu */}
       <AppBar component="nav">
         <Container>
-          <Toolbar>
+          <Toolbar
+            sx={{
+              display: "flex",
+              flexDirection: { xs: "row-reverse", sm: "row" },
+            }}
+          >
             <IconButton
               color="inherit"
               aria-label="open drawer"
@@ -72,9 +78,9 @@ export default function DrawerAppBar(props: Props) {
             <Typography
               variant="h6"
               component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}
+              sx={{ flexGrow: 1, display: { sm: "flex" } }}
             >
-              MUI
+              LYPHER
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (

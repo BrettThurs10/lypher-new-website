@@ -8,4 +8,12 @@ export const theme = createTheme({
   palette: {
     mode: "dark",
   },
+  typography: {
+    h6: {
+      fontFamily: "Dela Gothic One",
+    },
+    h3: {
+      fontFamily: "Nunito Sans",
+    },
+  },
 });

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
 .App {
   text-align: center;
 }
@@ -48,4 +50,8 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.logo {
+  font-family: "Dela Gothic One", cursive;
 }
