@@ -28,6 +28,7 @@ const Feature = ({ src, text, alt, l, r }: IFeature) => {
         justifyContent: "center",
         alignItems: "center",
         position: "relative",
+        overflow: "hidden",
       }}
     >
       <Box
@@ -37,7 +38,7 @@ const Feature = ({ src, text, alt, l, r }: IFeature) => {
           display: src ? "flex" : "none",
         }}
       >
-        <img src={src} width={"50%"} height="*" alt={alt} />
+        <img src={src} width={"50%"} height="*" alt={alt} loading="lazy" />
       </Box>
 
       <Box

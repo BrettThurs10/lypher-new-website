@@ -13,13 +13,13 @@ const Screenies = (props: Props) => {
     lg: size.width / 3,
     md: size.width / 2.2,
     sm: size.width / 2.2,
-    xs: size.width - 50,
+    xs: size.width / 1.1,
   };
   const wrapperWidth = {
     lg: size.width / 3,
     md: size.width / 2.2,
     sm: size.width / 2.2,
-    xs: size.width - 50,
+    xs: size.width / 1.1,
   };
   return (
     <Box

@@ -53,6 +53,10 @@ function App() {
         <meta charSet="utf-8" />
         <title>Lypher: Universal Game Companion | Download today</title>
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"
+        />
+        <meta
           name="description"
           content=" Lypher is a companion app to board games or tabletop sessions.
                 Get into the game faster with this handy dandy tool. Track
@@ -60,6 +64,10 @@ function App() {
                 roll dice and archive game sessions."
         />
         <meta property="og:title" content="Lypher: Universal Game Companion" />
+        <meta
+          property="og:image"
+          content="http://www.lypher.app/img/lypherMeta.png"
+        ></meta>
         <meta
           property="og:description"
           content="Lypher is a companion app to board games or tabletop sessions.
@@ -74,8 +82,9 @@ function App() {
         style={{
           flex: 1,
           display: "flex",
-          height: "100vh",
+
           flexDirection: "column",
+          width: "100vw",
         }}
         square
       >
@@ -123,10 +132,19 @@ function App() {
                 roll dice and archive game sessions.
               </Typography>
 
-              <Stack sx={{ marginTop: 5, flexDirection: "row" }}>
+              <Stack
+                sx={{
+                  marginTop: 5,
+                  flexDirection: { xs: "column", sm: "row" },
+                }}
+              >
                 <Button
                   color="secondary"
-                  sx={{ mr: 2 }}
+                  sx={{
+                    mr: 2,
+                    mb: 2,
+                    justifyContent: { xs: "flex-start", sm: "center" },
+                  }}
                   rel="noreferrer"
                   target="_blank"
                   href="https://apps.apple.com/us/app/lypher/id1526420861"
@@ -136,13 +154,18 @@ function App() {
                   Download
                 </Button>
                 <Button
+                  sx={{
+                    mr: 2,
+                    mb: 2,
+                    justifyContent: { xs: "flex-start", sm: "center" },
+                  }}
                   rel="noreferrer"
                   target="_blank"
                   href="https://discord.gg/Dydu9FHU"
                   variant="contained"
                   startIcon={<Icon icon="simple-icons:discord" />}
                 >
-                  Join the Discord
+                  discord
                 </Button>
               </Stack>
             </Stack>
@@ -150,7 +173,7 @@ function App() {
         </Container>
       </Paper>
       <Paper>
-        <Container sx={{ pt: 2, pb: 2 }}>
+        <Container sx={{ pt: 2, pb: 2, overflow: "hidden" }}>
           <Stack
             spacing={2}
             sx={{
