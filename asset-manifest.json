@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.19c60013.css",
-    "main.js": "/static/js/main.082e9bd2.js",
+    "main.css": "/static/css/main.9c9f7c0b.css",
+    "main.js": "/static/js/main.19677039.js",
     "static/js/787.ef3b7cee.chunk.js": "/static/js/787.ef3b7cee.chunk.js",
     "static/media/space.jpeg": "/static/media/space.5dd71511ae6c2e1b9cef.jpeg",
-    "static/media/dragon.jpeg": "/static/media/dragon.9e0eba1a3756546266cb.jpeg",
-    "static/media/menu.png": "/static/media/menu.09e5d8fc2cae361685bf.png",
-    "static/media/lyphernaut.png": "/static/media/lyphernaut.69ae10b46ced02185800.png",
-    "static/media/main.png": "/static/media/main.286d85d1b5896c260d58.png",
-    "static/media/dice.png": "/static/media/dice.5e00edc93fd89a21c43a.png",
-    "static/media/editPlayer.png": "/static/media/editPlayer.514274e0668267a8a73c.png",
-    "static/media/tutorial.png": "/static/media/tutorial.c24aeb7d996e821968c9.png",
-    "static/media/resources.png": "/static/media/resources.0d5df0655693f062415b.png",
-    "static/media/archiveGame.png": "/static/media/archiveGame.52ddebe020c6adf28a0d.png",
-    "static/media/settings.png": "/static/media/settings.9817762ad1ed091d797a.png",
+    "static/media/dragon.jpeg": "/static/media/dragon.8d81608348bf48eb2aec.jpeg",
+    "static/media/menu.png": "/static/media/menu.3022ad6a54d8286e2be0.png",
+    "static/media/lyphernaut.png": "/static/media/lyphernaut.cc7cc087ab56c6a78db1.png",
+    "static/media/main.png": "/static/media/main.34311f6cb6fc4e40d034.png",
+    "static/media/dice.png": "/static/media/dice.18f2a48c5425014d3653.png",
+    "static/media/editPlayer.png": "/static/media/editPlayer.2b43543b65ebdfa1eb5e.png",
+    "static/media/tutorial.png": "/static/media/tutorial.6efb5a9487f2bb7243fc.png",
+    "static/media/archiveGame.png": "/static/media/archiveGame.1f5522d601140951c141.png",
+    "static/media/resources.png": "/static/media/resources.375f213b3315ac19d641.png",
+    "static/media/settings.png": "/static/media/settings.fb283dd32721a260d460.png",
     "static/media/nunito-sans-v12-latin-regular.woff": "/static/media/nunito-sans-v12-latin-regular.bebfeeabe594d49a32f7.woff",
     "static/media/nunito-sans-v12-latin-regular.woff2": "/static/media/nunito-sans-v12-latin-regular.5c4de521b020a610c232.woff2",
     "static/media/dela-gothic-one-v10-latin-regular.woff": "/static/media/dela-gothic-one-v10-latin-regular.90d51a147288b14bfb7d.woff",
     "static/media/dela-gothic-one-v10-latin-regular.woff2": "/static/media/dela-gothic-one-v10-latin-regular.f47fab6bfedf14a46b76.woff2",
     "index.html": "/index.html",
-    "main.19c60013.css.map": "/static/css/main.19c60013.css.map",
-    "main.082e9bd2.js.map": "/static/js/main.082e9bd2.js.map",
+    "main.9c9f7c0b.css.map": "/static/css/main.9c9f7c0b.css.map",
+    "main.19677039.js.map": "/static/js/main.19677039.js.map",
     "787.ef3b7cee.chunk.js.map": "/static/js/787.ef3b7cee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19c60013.css",
-    "static/js/main.082e9bd2.js"
+    "static/css/main.9c9f7c0b.css",
+    "static/js/main.19677039.js"
   ]
 }
